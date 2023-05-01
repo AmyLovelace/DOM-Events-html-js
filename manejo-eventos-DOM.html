@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo de DOM con JavaScript</title>
+</head>
+<body>
+    <h1 onclick="cambiarTexto(this)" >Hola, soy Ami!</h1> <!--definimos el evento "onclick"-->
+    <!--el operador this apunta al mismo h1-->
+    <br>
+    <script>
+        function cambiarTexto(titulo){
+            console.log(titulo);
+            console.log(titulo.innerHTML);
+            titulo.innerHTML= 'ouch eso dolió! ';
+            console.log(titulo.innerHTML);
+
+       }
+    </script>
+</body>
+</html>
