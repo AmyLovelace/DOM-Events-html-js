@@ -3,24 +3,19 @@
 <head>
     <meta charset="UTF-8">
     
-    <title>Evento Onload</title>
+    <title>Evento OnChange</title>
 </head>
-<body onload="entrar()">
+<body >
     <h1 id="titulo">Manejo de DOM con JS</h1>
     <br>
-    <div id="mostrar"></div>
+    Nombre: <input type="text" id="nombre" onchange="convertir(this)">
+
+    
     <script>
-        function entrar(){
-            alert('entrando a la pagina web');
-            let texto ='';
-            if (navigator.cookieEnabled){
-                texto='Cookies habilitadas';
-            }
-            else{
-                texto= ' Cokies estan inhabilitadas';
-            }
-            document.getElementById('mostrar').innerHTML = texto;
+        function convertir(nombreInput){
+            nombreInput.value = nombreInput.value.toUpperCase();
         }
+       
     </script>
 
     
