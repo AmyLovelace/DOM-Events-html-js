@@ -5,15 +5,17 @@
     <title>Manejo de DOM con JavaScript</title>
 </head>
 <body>
-    <h1 onclick="cambiarTexto(this)" >Hola, soy Ami!</h1> <!--definimos el evento "onclick"-->
+    <h1 id="titulo">Hola, soy Ami!</h1> <!--definimos el evento "onclick"-->
     <!--el operador this apunta al mismo h1-->
     <br>
+    <div id="mostrar">
+
+    </div>
     <script>
-        function cambiarTexto(titulo){
-            console.log(titulo);
-            console.log(titulo.innerHTML);
-            titulo.innerHTML= 'ouch eso dolió! ';
-            console.log(titulo.innerHTML);
+        document.getElementById('titulo').onclick=cambiarTexto;
+         
+        function cambiarTexto(){
+           document.getElementById('mostrar').innerHTML = 'New Title'
 
        }
     </script>
