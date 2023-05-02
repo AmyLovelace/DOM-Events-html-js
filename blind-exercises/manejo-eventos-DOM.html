@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Manejo DOM Eventos</title>
+</head>
+<body>
+    <h1 id="titulo">Su Nombre es Diego Armando Maradona</h1>
+
+    <div id="mostrar"></div>
+
+    <script>
+//hacer un evento click recuperando el id del h1 y sumar un div con el nuevo titulo-
+        document.getElementById('titulo').onclick = cambiarTexto;
+
+        function cambiarTexto(){
+            document.getElementById('mostrar').innerHTML = 'nooo Su Nombre es Copito'
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
